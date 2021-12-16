@@ -1,0 +1,22 @@
+. "Manual page.
+. "To correct errors or typographical errors.
+.TH man 3 "December 16, 2021" "Holberton School 0x02. C - Shell v2"
+
+.SH NAME
+Shell v2
+
+.SH SYNOPSIS
+Shell v2: interpret the commands.
+
+.SH DESCRIPTION
+Shell is a shell (interface). In other words, an intermediary responsible for
+translate user commands into instructions that only the operating system kernel
+I can understand.
+
+.SH
+
+
+.B Author
+Camilo Valencia
+
+---
