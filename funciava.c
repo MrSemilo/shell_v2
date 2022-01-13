@@ -36,8 +36,6 @@ int _env(char *tok[])
 
 int _cd(char *tok[])
 {
-	char PATH[MAX_ARGS];
-	char HOME[MAX_ARGS];
 	char PWD[MAX_ARGS];
 
 	if (tok[1] == NULL)
