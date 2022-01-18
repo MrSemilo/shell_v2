@@ -1,1 +1,20 @@
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+NAME = hsh
+
+.PHONY: all clean oclean flcean re
+
+all: holberton.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
